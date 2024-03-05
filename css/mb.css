@@ -1,0 +1,269 @@
+/* start globalrules */
+:root {
+    --main-color:#31c015;
+    --main-color-alt:#ececec;
+    --main-transition: 0.3s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-seri;
+    background-image: linear-gradient(to right,#c4fffc,#e9edef3c);
+    position: relative;
+    
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* direction: rtl; */
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dots-left {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    left: 20px;
+    top: 539px
+
+}
+.dots-left-2 {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    left: 20px;
+    top: 1033px;
+}
+.dots-right {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    right: 20px;
+    top: 247px;
+}
+.dots-right-2 {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    right: 20px;
+    top: 776px;
+}
+.dots-right-2 {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    right: 20px;
+    top: 1465px;
+}
+.dots-right-3 {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    left: 20px;
+    top: 1465px;
+}
+.dots-left-3 {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 5px;
+    left: 20px;
+    top: 2200px;
+}
+    span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #31c015;
+    border-radius: 50%;
+
+}
+
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* end globalrules */
+/* start header */
+.header {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    max-height: 70px;
+    box-shadow: 0 14px 15px #00000080;
+    border-radius: 40px;
+}
+@media (max-width:767px) {
+    .header {
+        width: calc(100% - 30px);
+    }
+    .header .image {
+        display: none;
+    }
+
+    .header h2 {
+        margin: 5px auto;
+    }
+
+    }
+
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+        max-height: 72px;
+    }
+
+    @media (max-width:767px) {
+        .header .container {
+            justify-content: center;
+        }
+    }
+
+.header h2 {
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header .image h2 {
+    padding-top: 27px;
+    color: black;
+}
+/* end header */
+/* start firtlaizing */
+.content  {
+    padding-top: 100px;
+}
+.content .container  {
+    width: 700px;
+    position: relative;
+}
+
+.content img.left {
+    position: fixed;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px){
+    span {
+        display: none;
+    }
+    .content .container  {
+        width: 100%;
+        padding: 20px;
+    }
+}
+.content .container h1  {
+    text-align: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #3e2723;
+    position: relative;
+}
+
+.content .container h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    bottom: -15px;
+    left: 0;
+}
+.content .container h1::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #D7CCC8 ;
+    background-color: black;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content .container h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content .container h2::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 3px;
+    background-color: #31c015;
+}
+.content .container p {
+    line-height: 1.8;
+}
+
+.content .container ul, 
+.content .container ol {
+    line-height: 1.8;
+} 
+
+
+/* end firtlaizing */

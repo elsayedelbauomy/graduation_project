@@ -1,0 +1,609 @@
+/* start globalrules */
+:root {
+    --main-color:#31c015;
+    --main-color-alt:#ececec;
+    --main-transition: 0.3s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-seri;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* direction: rtl; */
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* end globalrules */
+/* start sidebar */
+.sidebar {
+    position:fixed;
+    right: 0;
+    top: 0;
+    width: 220px;
+    background-color: #ececec;
+    height: 100%;
+}
+
+@media (max-width:767px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar h2 {
+    text-align: center;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 10px;
+    color: var(--main-color);
+}
+
+.sidebar ul {
+    text-align: right;
+}
+
+
+
+.sidebar ul li a {
+    display: block;
+    margin-top: 3px;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .3s linear;
+    position: relative;
+    padding-right: 10px;
+}
+
+
+.sidebar ul li a:hover {
+    background-color: var(--main-color);
+    padding-right: 15px;
+    padding-top: 5px;
+    color: #fff;
+}
+
+/* end sidebar */
+/* start header */
+.header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 250px);
+    background-color: #fff;
+    max-height: 70px;
+    box-shadow: 0 14px 15px #00000080;
+    border-radius: 40px;
+}
+@media (max-width:767px) {
+    .header {
+        width: calc(100% - 30px);
+    }
+    .header .image {
+        display: none;
+    }
+
+    .header h2 {
+        margin: 5px auto;
+    }
+
+    }
+
+
+    .header .container-A {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+        max-height: 72px;
+    }
+
+    @media (max-width:767px) {
+        .header .container-A {
+            justify-content: center;
+        }
+    }
+
+.header h2 {
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header .image h2 {
+    padding-top: 27px;
+    color: black;
+}
+/* end header */
+/* start landing */
+.landing {
+    height: 100vh;
+    background-image: url(../images/top-view-tropical-leaves-with-copy-space_23-2148817593\(1\).avif);
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    padding: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.landing .container-A {
+    padding-right: 15px;
+    position: absolute;
+    top: 25%;
+    right: 220px;
+}
+
+@media (max-width: 900px) {
+    .landing .container-A {
+        right: 0;
+    }
+}
+
+@media (max-width:767px) {
+    .landing {
+        width: 106%;
+    }
+}
+
+.landing .text {
+
+}
+
+@media (max-width:767px) {
+
+    .landing .text {
+        font-weight: bolder;
+        margin-top: 111px; }
+}
+
+.landing .text h1 {
+
+}
+
+.landing .text p {
+
+}
+/* end landing */
+/* start garden */
+
+.garden {
+    padding-bottom: 100px; 
+    position: relative;
+}
+
+
+
+@media (max-width:767px) {
+    .garden::after {
+        display: none;
+    }
+    .garden {
+        margin-right: 0;
+    }
+}
+
+.garden .cont {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 220px;
+}
+
+@media (max-width:767px) {
+    .garden .cont {
+        margin: 0;
+        max-width:110%;
+    }
+}
+
+.garden .im {
+    width: 32%;
+    height: 220px;
+    position: relative;
+}
+
+.garden img {
+    width: 100%;
+    height: 100%;
+    transition: var(--main-transition);
+}
+
+.garden  div:first-child::before {
+    content: attr(attr);
+    position: absolute;
+    top: 153px;
+    left: 36px;
+    font-style: italic;
+    font-size: 33px;
+    color: #fff;
+} 
+
+.garden  div:nth-child(2):before {
+        content: attr(attr);
+        position: absolute;
+        top: 153px;
+        left: 36px;
+        font-style: italic;
+        font-size: 33px;
+        color: #fff;
+}
+
+.garden  div:nth-child(3):before {
+    content: attr(attr);
+    position: absolute;
+    top: 153px;
+    left: 36px;
+    font-style: italic;
+    font-size: 33px;
+    color: #fff;
+}
+
+@media (max-width:767px) {
+    .garden  div:first-child::before {
+        font-size: 20px;
+    }
+    .garden  div:nth-child(2):before {
+        font-size: 20px;
+    }
+    .garden  div:nth-child(3):before {
+        font-size: 15px;
+    }
+}
+
+.garden .container-A {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 220px);
+    padding-right: 15px;
+}
+
+@media (max-width:767px) {
+    .garden .container-A {
+        flex-direction: column;
+    }
+}
+
+.garden .container-A .image {
+    width: 350px;
+    height:350px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin: 70px;
+}
+
+@media (max-width:767px) {
+    .garden .container-A .image {
+        width: 200px;
+        height:200px;
+    }
+}
+
+.garden .container-A .image img {
+    border-radius: 50%;
+    transition: var(--main-transition);
+    display: block;
+}
+
+
+
+.garden .container-A .image img:hover {
+    transform: scale(1.2);
+}
+
+.garden .container-A .text {
+    text-align: right;
+    width: 450px;
+}
+
+@media (max-width:767px) {
+    .garden .container-A {
+        width: 106%;
+        justify-content: center;
+        padding: 0;
+        
+    }
+    .garden .container-A .text {
+        text-align: center;
+    }
+    .garden .container-A .text p {
+        padding: 0;
+        margin: 0 auto;
+        width: 250px;
+    }
+}
+
+.garden .container-A .text h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.garden .container-A .text p {
+    color:#777;
+}
+
+/* end garden */
+/* start plantes   */
+.plant {
+    padding-bottom: 10px; 
+    position: relative;
+    background-color: var(--main-color-alt);
+    z-index:200;
+    overflow: hidden;
+}
+
+@media (max-width:767px) {
+    .plant {
+        width: 110%;
+    }
+}
+
+.plant::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/home-3_leaf_01.png);
+    top: 0;
+    left:-150px;
+    width: 323px;
+    height: 323px;
+    z-index: -4;
+}
+
+.plant::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/home-3_leaf_01.png);
+    bottom: -10px;
+    right: -150px;
+    width: 323px;
+    height: 323px;
+    transform: rotate(180deg);
+    z-index: -4;
+}
+
+.plant .title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.plant .title h2 {
+    font-size: 35px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+
+.plant .title p {
+    line-height: 1.5;
+    color: #777;
+    
+}
+
+.plant .container {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(180px , 1fr)) ;
+    gap:40px;
+    text-align:center;
+}
+
+.plant .container .card {
+    margin-top: 50px;
+}
+
+.plant .container .image {
+    position: relative;
+    z-index: 1;
+}
+
+.plant .container .image:nth-child(4) {
+    margin-bottom: 0px;
+}
+
+
+.plant .container .image::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 170px;
+    height: 170px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-top-left-radius: 49px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 57px;
+}
+
+
+.plant .container .card img {
+    width: 200px;
+    height: 200px;  
+}
+
+.plant .container .card h3 {
+    font-weight: bold;
+}
+
+
+
+.plant .container .card h3:nth-child(4) {
+    padding: 0;
+    margin: 0;
+}
+
+
+.plant .container .card p {
+    color: #777;
+
+}
+
+.container .card .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .card .info a {
+    display: block;
+    margin-right: 25px;
+    color: var(--main-color);
+}
+
+.container .card .info i {
+    color: var(--main-color);
+}
+
+.plant .container .card:hover .info i {
+        animation: bouncing .6s linear infinite;
+}
+/* end plantes   */
+/* start animation */
+@keyframes bouncing {
+    100% {
+        transform: translateX(10px);
+    }
+    
+}
+/* end animation */
+/* start add */
+.add {
+    position: relative;
+    z-index: 200;
+    background-color: #fff;
+}
+
+.add .cont {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width:767px) {
+    .add .cont {
+        width: 110%;
+    }
+}
+
+.add .im {
+    width: 32%;
+    height: 220px;
+    position: relative;
+}
+
+.add img {
+    width: 100%;
+    height: 100%;
+    transition: var(--main-transition);
+}
+/* end add */
+/* start  lastsic */
+.footer { 
+    background-image:url(../images/close-up-green-bush_1162-53.avif);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    border-top: 15px solid #0b3d1a;
+}
+
+@media (max-width:767px) {
+    .footer {
+        width: 111%;
+    }
+}
+
+
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    z-index: -1;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container .logo img {
+
+}
+
+.footer .container ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer .container  ul li {
+    width: 30%;
+    margin: 15px 20px;
+}
+
+.footer .container ul li a {
+    display: block; 
+    color: #ececec;
+    background-color: #777;
+    padding: 10px;
+}
+/* end lastsic */
+

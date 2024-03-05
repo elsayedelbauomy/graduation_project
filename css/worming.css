@@ -1,0 +1,159 @@
+/* start globalrules */
+:root {
+    --main-color:#31c015;
+    --main-color-alt:#ececec;
+    --main-transition: 0.3s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-seri;
+    align:center
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* direction: rtl; */
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.8;
+    margin-right: 20px;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    right: -16px;
+    top: 10px;
+}
+.container {
+    padding: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* end globalrules */
+/* start header */
+.header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    background-color: #fff;
+    max-height: 70px;
+    box-shadow: 0 6px 15px #00000080;
+}
+@media (max-width:767px) {
+    .header {
+        width: calc(100% - 30px);
+    }
+    .header .image {
+        display: none;
+    }
+
+    .header h2 {
+        margin: 5px auto;
+    }
+
+    }
+
+
+    .header .container-A {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+        max-height: 72px;
+    }
+
+    @media (max-width:767px) {
+        .header .container-A {
+            justify-content: center;
+        }
+    }
+
+.header h2 {
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header .image h2 {
+    padding-top: 27px;
+    color: black;
+}
+/* end header */
+.content {
+    padding-top: 150px;
+    text-align: right;
+    background-color: var(--main-color-alt);
+}
+
+
+.content  .container .image {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.555);
+}
+
+.content  .container .image img {
+    border-radius: 6px;
+    max-width: 100%;
+}
+
+.content  .container h2 {
+
+}
+
+.content  .container p,
+.content  .p {    
+    line-height: 1.8;
+    padding-left: 200px;
+}
+
+@media (max-width:767px) {
+    .content  .container p,
+.content  .p {
+    padding-left: 0;
+}
+}

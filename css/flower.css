@@ -1,0 +1,310 @@
+/* start globalrules */
+:root {
+    --main-color:#31c015;
+    --main-color-alt:#ececec;
+    --main-transition: 0.3s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-seri;
+    background-color: #ececec;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* direction: rtl; */
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* end globalrules */
+/* start header */
+.header {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    max-height: 70px;
+    box-shadow: 0 14px 15px #00000080;
+    border-radius: 40px;
+}
+@media (max-width:767px) {
+    .header {
+        width: calc(100% - 30px);
+    }
+    .header .image {
+        display: none;
+    }
+
+    .header h2 {
+        margin: 5px auto;
+    }
+
+    }
+
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+        max-height: 72px;
+    }
+
+    @media (max-width:767px) {
+        .header .container {
+            justify-content: center;
+        }
+    }
+
+.header h2 {
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header .image h2 {
+    padding-top: 27px;
+    color: black;
+}
+/* end header */
+/* start siction */
+.siction {
+    padding-top: 150px;
+    bottom: 100px;
+}
+
+.siction h2 {
+    width: fit-content;
+    margin: 20px auto;
+    border: 2px solid var(--main-color);
+    padding: 10px 15px;
+    position: relative;
+    color: #5e635d;
+    border-radius: 3px;
+}
+
+.siction h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+.siction  .container {
+    margin-top: 100px;
+}
+.siction  .container .box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 14px 15px #0000002e;
+    position: relative;
+    margin-bottom: 40px;
+    gap:10px;
+}
+.siction  .container .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to left, red 25% , rgb(0, 179, 255) 25% ,rgb(0, 179, 255) 50% , rgb(109, 11, 213) 50% , rgb(109, 11, 213) 75% , green 75%);
+}
+.siction  .container .box  {
+    overflow: hidden;
+}
+.siction  .box >  img {
+    width:400px;
+    height: 300px;
+    background-size: cover;
+}
+
+.siction  .container .box .info {
+    padding: 0 10px;
+    flex: 1;
+}
+
+.siction  .container .box .item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding: 6px;
+}
+.siction  .container .box .item.one{
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+.siction  .container .box .item p {
+    color: #777;
+}
+.siction  .container .box .item {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.siction  .container .box .item img {
+    width:40px;
+    margin-left: 15px;
+}
+
+.siction  .container .box.f-3 .image {
+    width: 400px;
+    height: 300px;
+}
+/* end siction */
+/* start flawor */
+.flawor {
+    position: absolute;
+    top: 199px;
+    left: 169px;
+    margin-bottom: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.flawor span {
+    position: absolute;
+    background-color: pink;
+    width: 100px;
+    height: 50px;
+    z-index: -1;
+    display: block;
+    transition: .3s;
+    opacity: 0;
+}
+
+.flawor .one {
+    right: -22px;
+    top: -38px;
+    transform: rotate(291deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+}
+.flawor .two {
+    right: -67px;
+    top: -27px;
+    transform: rotate(-26deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .8s;
+}
+
+.flawor .three {
+    right: -58px;
+    top: 31px;
+    transform: rotate(56deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .6s;
+
+}
+.flawor .four {
+    right: -77px;
+    top: -2px;
+    transform: rotate(28deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .5s;
+}
+
+.flawor .five {
+    right: -23px;
+    top: 38px;
+    transform: rotate(96deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .4s;
+}
+
+.flawor .six {
+    right: 5px;
+    top: 30px;
+    transform: rotate(130deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .3s;
+}
+.flawor .seven {
+    right: 20px;
+    top: 8px;
+    transform: rotate(180deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .2s;
+}
+
+.flawor .eight {
+    right: 12px;
+    top: -21px;
+    transform: rotate(233deg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 51px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    animation-delay: .1s;
+}
+/* end flawor */
+/* start animation */
+
+/* end animation */
