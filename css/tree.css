@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(to right, #c5e1a566, #fff9c4a1);
+    text-align: right;
 }
 /* start header */
 .header {
@@ -152,7 +153,8 @@ body {
 }
 
 .siction  .container .box .item p {
-    color: #777;
+    color: #000;
+    font-size: 22px;
 }
 .siction  .container .box .item {
     display: flex;

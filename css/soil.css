@@ -12,6 +12,7 @@ body {
     background-image: linear-gradient(to right,#D7CCC8,#EFEBE9);
     position: relative;
     
+    
 }
 * {
     -moz-box-sizing: border-box;
@@ -236,6 +237,8 @@ ul {
 
 .content .container p {
     line-height: 1.8;
+    font-size: 20px;
+    
 }
 
 .content .container .box {

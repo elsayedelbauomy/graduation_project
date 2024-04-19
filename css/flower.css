@@ -10,6 +10,7 @@ body {
     margin: 0;
     font-family: 'Cairo', sans-seri;
     background-color: #ececec;
+    text-align: right;
 }
 
 * {
@@ -156,12 +157,11 @@ ul {
 .siction  .container .box  {
     overflow: hidden;
 }
-.siction  .box >  img {
-    width:400px;
-    height: 300px;
+.siction .box > img {
+    width: 50%;
+    height: 442px;
     background-size: cover;
 }
-
 .siction  .container .box .info {
     padding: 0 10px;
     flex: 1;
@@ -179,7 +179,8 @@ ul {
     padding: 0;
 }
 .siction  .container .box .item p {
-    color: #777;
+    color: black;
+    font-size: 20px;
 }
 .siction  .container .box .item {
     display: flex;
@@ -303,6 +304,10 @@ ul {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 0px;
     animation-delay: .1s;
+}
+
+h3 {
+    font-size: 30px;
 }
 /* end flawor */
 /* start animation */
